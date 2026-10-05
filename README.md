@@ -6,9 +6,9 @@ families to an admissions enquiry.
 
 ## Project status
 
-- **Live website:** Not deployed yet
-- **Source repository:** Not provided
-- **Application type:** React single-page app built with Vite (not Next.js)
+- \*\*Live website: https://tulasinternationalschool.vercel.app/
+- **Source repository:https://github.com/Vinod-Kumar-Koduru/tulas_international_school
+  **Application type:\*\* React single-page app built with Vite (not Next.js)
 
 ## What the project includes
 
@@ -70,10 +70,9 @@ serves that build locally.
 No hosting provider or live deployment is configured in this project yet. It
 can be deployed to Vercel, Netlify, or another static host using:
 
-* Live Link:- 
 
-- **Build command:** `npm run build`
-- **Output directory:** `dist`
+* **Build command:** `npm run build`
+* **Output directory:** `dist`
 
 After deployment, replace the status above with the actual public URL. A
 repository URL can be added once one is available.
