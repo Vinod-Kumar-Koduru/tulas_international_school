@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #2dd4bf;
+  --color-accent: #fde047;
+  --color-ink: #111827;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  @apply bg-white text-ink antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+:focus-visible {
+  outline: 3px solid #0f766e;
+  outline-offset: 3px;
+}
+
+::selection {
+  @apply bg-accent text-ink;
+}
+
+/* Hide the system cursor only where the custom one is shown */
+@media (pointer: fine) {
+  body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
